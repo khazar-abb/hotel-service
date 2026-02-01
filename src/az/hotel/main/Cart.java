@@ -15,13 +15,16 @@ public class Cart {
     public double calculateTotalPrice() {
         double total = 0;
         for (int i = 0; i < products.length; i++) {
-            total += products[i].getPrice();
+            if (products[i] != null) {
+                total += products[i].getPrice();
+            }
         }
         return total;
     }
 
     public void printCart() {
         StringBuilder sb = new StringBuilder();
+        System.out.print("All products in cart --> ");
         for (Product product : products) {
             sb.append(product).append(" - ");
         }

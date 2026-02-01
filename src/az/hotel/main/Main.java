@@ -1,14 +1,10 @@
 package az.hotel.main;
 
-import az.hotel.model.Guest;
-import az.hotel.model.Room;
-import az.hotel.service.HotelService;
-
 public class Main {
     static void main() {
-        Product product = new Product(11, "miko", 199.00);
-        Product product02 = new Product(22, "rimo", 123.33);
-        Product product03 = new Product(33, "tuco", 410.91);
+        Product product = new Product(11, "miko", 100.00);
+        Product product02 = new Product(22, "rimo", 200.00);
+        Product product03 = new Product(33, "tuco", 300.00);
 
         Cart cart = new Cart();
         cart.addProduct(product);
@@ -16,5 +12,6 @@ public class Main {
         cart.addProduct(product03);
 
         cart.printCart();
+        System.out.println("Total price: " + cart.calculateTotalPrice());
     }
 }
