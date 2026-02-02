@@ -46,11 +46,9 @@ public class Main {
         long endSB = System.currentTimeMillis();
         System.out.println("StringBuilder operation time: " + (endSB - startSB) + "ms");
 
-
-
         // 5.
         Scanner scanner = new Scanner(System.in);
-        System.out.println("ENTER YOUR NAME I WILL REVESE IT :)");
+        System.out.println("ENTER YOUR NAME I WILL REVERSE IT :)");
         String input = scanner.nextLine();
         StringBuilder tool = new StringBuilder(input);
         tool.reverse();
