@@ -1,4 +1,5 @@
 package AbstractionInheritancePolymorphism.Polymorphism;
 
-public class Course {
+public abstract class Course {
+    abstract void start();
 }
