@@ -1,4 +1,4 @@
-package EmployeeSalary;
+package AbstractionInheritancePolymorphism.EmployeeSalary;
 
 public abstract class Employee {
     private String name;

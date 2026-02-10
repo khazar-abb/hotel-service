@@ -1,4 +1,4 @@
-package EmployeeSalary;
+package AbstractionInheritancePolymorphism.EmployeeSalary;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package EmployeeSalary;
+package AbstractionInheritancePolymorphism.EmployeeSalary;
 
 public class Freelancer extends Employee{
 
