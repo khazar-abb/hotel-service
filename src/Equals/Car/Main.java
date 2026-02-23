@@ -2,9 +2,9 @@ package Equals.Car;
 
 public class Main {
     static void main(String[] args) {
-        Car car = new Car("11", "BMW", CarType.SEDAN);
-        Car car_02 = new Car("11", "BMW", CarType.SEDAN);
-        Car car_03 = new Car("222", "BMW", CarType.SEDAN);
+        Car car = new Car("BMW", CarType.SEDAN);
+        Car car_02 = new Car( "BMW", CarType.SEDAN);
+        Car car_03 = new Car( "BMW", CarType.SEDAN);
 
         if (car.equals(car_02)){
             System.out.println("Bu maşın artıq mövcuddur.");
@@ -18,6 +18,11 @@ public class Main {
             System.out.println("Yeni maşın əlavə oluna bilər.");
         }
 
+        System.out.println("----------------------------------------");
+        System.out.println(car.getPlateNumber());
+        System.out.println(car_02.getPlateNumber());
+        System.out.println(car_03.getPlateNumber());
+        System.out.println("----------------------------------------");
         System.out.println(car.hashCode());
         System.out.println(car_02.hashCode());
         System.out.println(car_03.hashCode());

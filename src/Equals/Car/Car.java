@@ -4,16 +4,12 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class Car {
-    private String plateNumber;
+    private final String plateNumber = UUID.randomUUID().toString();
     private String brand;
     private CarType carType;
 
     public String getPlateNumber(){
         return plateNumber;
-    }
-
-    public void setPlateNumber(String plateNumber){
-        this.plateNumber = plateNumber;
     }
 
     public String getBrand() {
@@ -32,8 +28,7 @@ public class Car {
         this.carType = carType;
     }
 
-    public Car(String plateNumber, String brand, CarType carType) {
-        this.plateNumber = plateNumber;
+    public Car(String brand, CarType carType) {
         this.brand = brand;
         this.carType = carType;
     }
