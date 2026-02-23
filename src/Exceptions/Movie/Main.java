@@ -50,5 +50,6 @@ public class Main {
         } catch (InvalidMovieDataException es){
             System.out.println(es.getCause());
         }
+
     }
 }
