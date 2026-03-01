@@ -1,4 +1,4 @@
-package Annotation;
+package Annotation.First;
 
 public class GradeProcessor {
     public static void printGradeInfo(Class<?> clazz) {

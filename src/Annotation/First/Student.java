@@ -1,4 +1,4 @@
-package Annotation;
+package Annotation.First;
 
 @GradeInfo(teacher = "Nicat", maxScore = 100)
 public class Student {
@@ -16,5 +16,13 @@ public class Student {
 
     public int getScore() {
         return score;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", score=" + score +
+                '}';
     }
 }
