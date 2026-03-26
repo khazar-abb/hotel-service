@@ -1,4 +1,4 @@
-package OopMaster;
+package Oop;
 
 public abstract class Payment {
     private double amount;

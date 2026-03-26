@@ -1,4 +1,4 @@
-package OopMaster;
+package Oop;
 
 public class ApplePay extends Payment implements Notifiable {
 

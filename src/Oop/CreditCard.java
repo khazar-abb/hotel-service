@@ -1,4 +1,4 @@
-package OopMaster;
+package Oop;
 
 public class CreditCard extends Payment implements Notifiable{
     private int cardNumber;
