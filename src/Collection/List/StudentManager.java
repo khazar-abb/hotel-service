@@ -1,6 +1,7 @@
 package Collection.List;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class StudentManager {
@@ -19,14 +20,16 @@ public class StudentManager {
     }
 
     public void removeStudent(int studentId){
-            // write by using ITERATOR
-        for (Student st : studentList){
-            if (studentId == st.getId()){
-                studentList.remove(st);
+        Iterator<Student> itr = studentList.iterator();
+
+        while (itr.hasNext()){
+            Student st = itr.next();
+            if (st.getId() == studentId){
+                itr.remove();
                 System.out.println("Student removed. ID: " + st.getId());
-                return;
             }
         }
+
         System.out.println("ID: " + studentId + " not exists in list.");
     }
 
